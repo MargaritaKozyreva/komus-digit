@@ -1,0 +1,32 @@
+.root {
+    width: 100%;
+    display: grid;
+    gap: 20px;
+    height: max-content;
+
+    & .label {
+        font-weight: 700;
+    }
+
+    & textarea {
+        width: 100%;
+        min-height: 100px;
+    }
+
+    .rate {
+        width: 100%;
+    }
+}
+
+
+@media (min-width:960px) {
+    .root {
+        min-width: 90vh;
+
+        & button {
+            height: 54px;
+            font-weight: 400;
+            font-size: 22px;
+        }
+    }
+}

@@ -1,0 +1,30 @@
+.raiting {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.star {
+  fill: #e2e2e2;
+  transition: all 0.3s;
+  cursor: default;
+  margin-right: 5px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+.star:hover,
+.star:focus {
+  outline: none;
+}
+
+.isEditable .star:hover {
+  fill: #fda700;
+  cursor: pointer;
+}
+
+.fill {
+  fill: #fda700;
+}

@@ -1,0 +1,26 @@
+.table {
+    width: 100%;
+    border-collapse: collapse;
+
+
+    tr:nth-child(2n+1) {
+        background-color: #FAFAFA;
+        padding: 2px 15px;
+    }
+
+    th {
+        padding: 2px 5px;
+        text-align: left;
+        font-weight: 500;
+        font-size: 15px;
+        color: #000000;
+    }
+
+    td {
+        padding: 2px 5px;
+        text-align: left;
+        font-weight: 300;
+        font-size: 15px;
+        color: #000000;
+    }
+}

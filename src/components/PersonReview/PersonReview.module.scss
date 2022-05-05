@@ -1,0 +1,39 @@
+.root {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 50px;
+}
+
+.likes{
+    position: absolute;
+    bottom: 15px;
+    right: 25px;
+}
+
+.personInfoWrapper {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 31px;
+    align-items: center;
+}
+.personInfo {
+   width: 100%;
+}
+
+.personPosition {
+    color: #474A57;
+    font-family: 'Fira Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.reviewAvatar {
+    border-radius: 100px;
+    width: 105px;
+    height: 105px;
+}
+
+.content {
+    display: grid;
+}

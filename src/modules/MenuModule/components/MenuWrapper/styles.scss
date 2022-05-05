@@ -1,0 +1,17 @@
+.mainMenu__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 50px 0 50px;
+    z-index: 101;
+    height: auto;
+    flex-grow: 0;
+}
+
+.mobileMenuCloseBtn,
+.mobileMenuHamburger {
+    display: none;
+}
+
+.mobileMenuCloseBtn {
+    z-index: 1;
+}

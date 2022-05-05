@@ -1,0 +1,249 @@
+html {
+    font-size: 10px;
+}
+
+#komus-number {
+    min-width: 430px;
+}
+
+.not-found {
+    height: inherit;
+}
+
+body {
+    display: block;
+
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family);
+    color: var(--font-color);
+    background: var(--white);
+
+    overflow-x: hidden;
+    position: relative;
+    z-index: 100;
+
+    font-size: 1.4rem;
+    line-height: 145%;
+}
+
+li.selected a {
+    color: red !important;
+    display: inline-block;
+    font-size: 15px;
+}
+
+li.previous {
+    margin-left: -20px;
+}
+li.next {
+    margin-left: 20px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+a {
+    text-decoration: none;
+    color: var(--link-color)
+}
+
+.academy__element-link{
+    cursor: pointer;
+}
+
+.animation-block__bottom {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 140px;
+    flex-grow: 0;
+    overflow: hidden;
+}
+
+.fill_box {
+    animation-name: default_twitch;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes default_twitch {
+    from {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(0, 15px);
+    }
+
+    to {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes high_twitch {
+    from {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(0, 30px);
+    }
+
+    to {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes low_twitch {
+    from {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(0, 10px);
+    }
+
+    to {
+        transform: translate(0, 0);
+    }
+}
+
+.page-content {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: block;
+    margin-top: 65px;
+}
+
+.page {
+    padding-top: 0;
+}
+
+@media (max-width: 768px) {
+    .page-content {
+        margin-top: 0px !important;
+    }
+}
+
+.sdo-main {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+}
+
+.sdo-main,
+.sdo-header_wrapper,
+.sdo-footer_wrapper {
+    max-width: 100% !important;
+    width: 100%;
+    box-sizing: border-box;
+    margin: auto !important;
+}
+
+.sdo-footer_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 !important;
+}
+
+#wt-container .sdo-header {
+    display: none !important;
+}
+
+h3, .XAML-label-header-3 {
+    font-family: inherit;
+    font-size: initial;
+    font-weight: 500;
+    margin: auto;
+}
+
+// input[type="button"]:hover, input[type="submit"]:hover, button:hover, a.button:hover {
+//     border-color: inherit  !important;
+//     color: inherit !important;
+//     border-color: inherit !important;
+//     background-color: inherit !important;
+//     color: inherit !important;
+//   }
+
+.card {
+    border: none !important;
+}
+
+/* index-agile-popup */
+.index-agile {}
+
+.index-agile__top-image .index-agile__top-title {
+    display: none;
+}
+
+.index-agile__top {
+    display: flex;
+}
+
+
+.index-agile__top-title {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 135%;
+    margin-bottom: 60px;
+}
+
+.index-agile__top-text {
+    margin-bottom: 45px;
+    padding: 40px 25px;
+    font-size: 17px;
+    line-height: 200%;
+    background: linear-gradient(90deg,
+            rgba(234, 253, 254, 1) 0%,
+            rgba(236, 244, 255, 1) 35%,
+            rgba(231, 233, 255, 1) 100%);
+    border: 1px solid #a9d0e2;
+    border-radius: 20px;
+}
+
+.index-agile__info-box {
+    display: flex;
+    column-gap: 31px;
+}
+
+.index-agile__info-title {
+    font-size: 24px;
+    line-height: 150%;
+    margin-bottom: 35px;
+}
+
+.index-agile__info-text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: #000000;
+    margin-bottom: 25px;
+}
+
+.index-agile__info-col {
+    max-width: 556px;
+}
+
+/* end index-agile-popup */
+
+::-webkit-scrollbar {
+    width: 0.7em !important;
+    scroll-behavior: smooth !important;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3) !important;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: darkgrey !important;
+    outline: 1px solid slategrey !important;
+    border-radius: 10px !important;
+}

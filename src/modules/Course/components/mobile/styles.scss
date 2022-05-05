@@ -1,0 +1,25 @@
+.zone-item {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    margin: 20px 0px;
+
+    &:last-child {
+        margin: 0px;
+    }
+
+    &__date {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        gap: 4px;
+    }
+}
+
+.card-mobile-container .layout {
+    margin-bottom: 16px;
+
+    &:last-child {
+        margin-bottom: 0px;
+    }
+}

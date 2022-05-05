@@ -1,0 +1,9 @@
+# Project
+node_modules
+build
+
+# IDE
+.idea
+.vscode
+.editorconfig
+.env.local

@@ -1,0 +1,42 @@
+.help {
+    background-color: white;
+    padding-bottom: 70px;
+    padding-top: 5px;
+};
+
+
+.help-title {
+    text-align: center;
+    margin-top: 73px;
+    margin-bottom: 36px;
+    font-size: 48px;
+    font-weight: 800;
+    font-family: "Montserrat", sans-serif;
+    color: #000;
+    line-height: 64px;
+}
+
+.help-btns {
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: 500;
+    margin: auto;
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.help-btn {
+    padding: 14px 30px;
+    background-color: #ffaf38;
+    border-radius: 42px;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    color: #ffffff;
+    display: inline-block;
+    margin-bottom: 20px;
+    margin: 0 15px;
+}

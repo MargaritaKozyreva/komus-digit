@@ -1,0 +1,55 @@
+.academy__element.academy-item-2 {
+  grid-area: Item-2
+}
+
+.academy__element.academy-item-5 {
+  grid-area: Item-5;
+}
+
+.academy__element.academy-item-2,
+.academy__element.academy-item-5 {
+  max-width: 670px;
+  width: 100%;
+  display: flex;
+  height: max-content;
+
+}
+
+.academy__element.academy-item-5 .academy__element-image,
+.academy__element.academy-item-2 .academy__element-image {
+  padding-left: 20px;
+  margin: -25px 0;
+  margin-right: 0px;
+  margin-right: -46px;
+  width: 100%;
+}
+
+.academy__element.academy-item-5 .academy__element-image img,
+.academy__element.academy-item-2 .academy__element-image img {
+  margin-bottom: -6px;
+  border-radius: 0 15px 15px 0;
+  object-fit: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+}
+
+.academy__element.academy-item-5 .academy__element-box,
+.academy__element.academy-item-2 .academy__element-box {
+  order: -1;
+  position: relative;
+  padding-bottom: 40px;
+}
+
+.academy__element.academy-item-5 .academy__element-box::before,
+.academy__element.academy-item-2 .academy__element-box::before {
+  content: "";
+  position: absolute;
+  bottom: -12px;
+  left: -10px;
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}

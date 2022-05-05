@@ -1,0 +1,159 @@
+@import '../ui';
+
+@mixin reset-button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+
+    &:focus {
+        outline: none;
+    }
+
+    &:disabled {
+        cursor: default;
+        opacity: .5;
+    }
+}
+
+.komus-design-button {
+    @include reset-button;
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-size: 2.2rem;
+    line-height: 100%;
+    font-weight: 500;
+    padding: 20px 14px;
+    border-radius: 40px;
+    margin-top: 15px;
+    text-decoration: none;
+    outline: none;
+    position: relative;
+    font-family: 'Fira Sans', sans-serif;
+
+    &>div.circle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #fff;
+        border-radius: 100%;
+        width: 35.6px;
+        height: 35.6px;
+        background-color: var(--white);
+
+        svg {
+            margin-right: -7px;
+        }
+    }
+
+    &_size {
+        &_l {
+            width: max-content;
+            height: 54.18px;
+            &>div.circle {
+                width: 35px;
+                height: 35px;
+                margin-left: 25px;
+                svg {
+                    width: 35px;
+                    height: 20px;
+                    margin-right: -7px;
+                }
+            }
+        }
+
+        &_s {
+            font-size: 14px;
+            padding: 15px;
+
+            &>div.circle {
+                width: 22px;
+                height: 22px;
+                margin-left: 11px;
+
+                svg {
+                    width: 12px;
+                    height: 12px;
+                    margin-right: -7px;
+                }
+            }
+        }
+
+    }
+
+    &__text {
+        position: relative;
+    }
+
+
+
+    &_mode {
+        &_red {
+            background-color: var(--red);
+            color: var(--white);
+
+            &:hover {
+                background-color: var(--light-red);
+
+            }
+
+            &>div.circle {
+                svg {
+                    color: var(--red);
+                }
+            }
+        }
+
+        &_blue {
+            background-color: var(--dark-blue);
+            color: var(--white);
+
+            &:hover {
+                background-color: var(--light-blue);
+
+            }
+
+            &>div.circle {
+                svg {
+                    color: var(--dark-blue);
+                }
+            }
+        }
+
+        &_lightBlue {
+            background-color: var(--light-blue);
+            color: var(--white);
+
+            &:hover {
+                background-color: var(--light-blue);
+
+            }
+
+            &>div.circle {
+                svg {
+                    color: var(--light-blue);
+                }
+            }
+        }
+
+        &_orange {
+            background-color: var(--orange);
+            color: var(--white);
+
+            &:hover {
+                background-color: var(--light-orange);
+
+            }
+
+            &>div.circle {
+                svg {
+                    color: var(--orange);
+                }
+            }
+        }
+    }
+
+}

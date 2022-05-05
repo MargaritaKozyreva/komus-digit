@@ -1,0 +1,34 @@
+.tableMobile {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+
+    .wrapper{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto 1fr;
+        gap: 5px;
+    }
+
+    .checkBox{
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 10px;
+        align-items: center;
+    }
+    .person{
+        width: 100%;
+    }
+    .position{
+        width: 100%;
+    }
+    .email{
+        width: 100%;
+    }
+    .input{
+       margin: 0;
+       padding: 0;
+    }
+}

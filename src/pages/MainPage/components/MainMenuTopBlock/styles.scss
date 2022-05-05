@@ -1,0 +1,142 @@
+.animation-block__wrapper {
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    background: linear-gradient(46.35deg, #15324B 30.14%, #18675E 72.1%);
+    position: relative;
+    width: 100%;
+
+    /*min-height:98vh;*/
+    justify-content: space-between;
+}
+
+.animation-block__top {
+    display: flex;
+    position: relative;
+    width: 100%;
+    flex-grow: 1;
+    flex-direction: column;
+}
+
+.animation-block__bottom {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 140px;
+    flex-grow: 0;
+    overflow: hidden;
+}
+
+#svg-animation-bottom {
+    width: calc(100vw + 30px);
+    display: block;
+    position: absolute;
+    top: -8px;
+}
+
+.small-header .animation-block__bottom #svg-animation-bottom {
+    top: -10px;
+}
+
+@media (max-width: 1400px) {
+    .small-header .animation-block__bottom #svg-animation-bottom {
+        top: -30px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .small-header .animation-block__bottom #svg-animation-bottom {
+        top: -46px;
+    }
+
+    .mainMenu__wrapper {
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+        margin-top: 50px;
+    }
+
+    .mainMenu__item,
+    .mainMenu__items {
+        margin: 0;
+    }
+
+    .mainMenu__logo {
+        margin: 0;
+    }
+
+    .mainMenu__userContainer {
+        padding-right: 10px;
+    }
+}
+
+
+.animation-block__topBackground {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: calc(100% + 100px);
+    overflow: hidden;
+}
+
+
+.animation-block__slogan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    bottom: 90px;
+    width: 100%;
+    height: 250px;
+    z-index: 0;
+}
+
+
+
+.animation-block__sloganImage {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: auto;
+    opacity: 0.3;
+    width: 80vw;
+}
+
+/* animation-block__sample */
+.animation-block__sample {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    border-radius: 1px;
+    background: #0B1F30;
+}
+
+.animation-block__sample_xl {
+    width: 190px;
+    height: 190px;
+}
+
+.animation-block__sample_l {
+    width: 140px;
+    height: 140px;
+}
+
+.animation-block__sample_m {
+    width: 105px;
+    height: 105px;
+}
+
+.animation-block__sample_s {
+    width: 77px;
+    height: 77px;
+}
+
+.fill_box {
+    animation-name: default_twitch;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}

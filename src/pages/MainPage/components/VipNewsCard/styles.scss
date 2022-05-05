@@ -1,0 +1,92 @@
+.div6 {
+    position: sticky;
+    top: 155px;
+    height: 500px;
+}
+
+.div {
+    background: #ffffff;
+    border: 1px solid #b1cddd;
+    box-sizing: border-box;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 15px;
+}
+
+.div6 {
+    width: 100%;
+    z-index: 100;
+}
+
+@media (max-width: 768px) {
+    .div6 {
+        min-height: 300px;
+        height: auto;
+        max-width: 340px;
+        margin-bottom: 20px;
+    }
+}
+
+
+.div6 .user-image {
+    border-radius: 50%;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 105px;
+    height: 105px;
+}
+
+.div6 .user-image img {
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+.div-wrap {
+    position: absolute;
+    bottom: 11px;
+}
+
+.div6::after {
+    position: absolute;
+    top: -150px;
+    right: -30px;
+}
+
+.dtitle {
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+}
+
+.dbold {
+    font-weight: 700;
+    font-family: "Fira Sans", sans-serif;
+    font-size: 24px;
+    line-height: 26.4px;
+    margin-bottom: 10px;
+    max-width: 280px;
+}
+
+.dtext {
+    max-width: 251px;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.dread {
+    margin-bottom: 11px;
+}
+
+.div6 {
+    & img.vip-anime {
+        position: absolute;
+        top: -150px;
+        right: -30px;
+    }
+}

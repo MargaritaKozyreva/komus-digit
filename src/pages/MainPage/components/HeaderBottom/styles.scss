@@ -1,0 +1,33 @@
+.heder-bootom {
+    background-color: #fff;
+    padding-bottom: 27px;
+}
+
+.container {
+    max-width: 1382px;
+    padding: 0 15px;
+    margin: auto;
+}
+
+.header-line-wrapper {
+    column-gap: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.h-line-item {
+    display: flex;
+    align-items: center;
+}
+
+.h-line-item img {
+    margin-right: 15px;
+}
+
+.h-line-item p {
+    color: #000;
+    font-family: "Roboto", sans-serif;
+    font-size: 17px;
+    font-weight: 300;
+}

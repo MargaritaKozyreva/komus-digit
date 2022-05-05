@@ -1,0 +1,51 @@
+.mainMenu__userbar {
+    display: flex;
+    position: relative;
+    flex-grow: 0;
+    align-items: center;
+    margin-right: 50px;
+  }
+
+  .mainMenu__userContainer {
+    display: flex;
+    padding: 10px 15px;
+      padding-right: 15px;
+    background-color: transparent;
+    padding-right: 50px;
+    margin-right: -50px;
+    border-radius: 2px 0 0 2px;
+  }
+
+  .mainMenu__userLink {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-decoration: none;
+  }
+
+  .mainMenu__userQuest {
+    display: flex;
+    font-size: 1.7rem;
+    line-height: 100%;
+    color: #fff;
+    margin-right: 15px;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .mainMenu__userName {
+    display: flex;
+    font-size: 1.7rem;
+    line-height: 100%;
+    color: #fff;
+    margin: 0 0 0 15px;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .mainMenu__userPhoto {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+  }
+

@@ -1,0 +1,26 @@
+.card {
+    padding-top: 50px;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+}
+
+.container {
+    max-width: 1382px;
+    padding: 0 15px;
+    margin: auto;
+}
+
+.card-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    width: 100%;
+}
+@media screen and (max-width: 750px) {
+    .card-wrapper {
+        display: block;
+    }
+
+}

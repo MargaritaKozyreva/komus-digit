@@ -1,0 +1,118 @@
+.root {
+    display: grid;
+    position: relative;
+}
+
+.likes {
+    position: absolute;
+    bottom: 15px;
+    right: 25px;
+}
+
+.minText {
+    min-height: 65px;
+}
+
+@media (max-width: 1050px) {
+    .root {
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+
+}
+
+
+@media (min-width: 1050px) {
+    .root {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 800px) {
+    .root {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+}
+
+
+.title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 64px;
+}
+
+.reviewAvatar {
+    border-radius: 100px;
+    width: 105px;
+    height: 105px;
+}
+
+.rootWrapper {
+    display: flex;
+    align-items: center;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto 1fr auto;
+    gap: 3px;
+    flex-direction: column;
+    margin-left: 30px;
+}
+
+.loadText {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+}
+
+.loadCircle,
+.hideCircle {
+    display: flex;
+    width: 105px;
+    height: 105px;
+    background: #3da3e2;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    transition: all 0.2s;
+}
+
+.loadCircle {
+    background: #3da3e2;
+    margin-right: 21px;
+}
+
+.hideCircle {
+    background: tomato;
+}
+
+.loadCourseCard:hover .loadCircle {
+    background: #1d6b9b;
+    cursor: pointer;
+}
+
+.loadCircle:hover {
+    background: #1d6b9b;
+    cursor: pointer;
+}
+
+.loadCourseCard:hover {
+    cursor: pointer;
+}
+
+.loadCourseCard:hover .hideCircle {
+    background: rgb(191, 3, 3);
+    cursor: pointer;
+}
+
+.hideCircle:hover {
+    background: rgb(191, 3, 3);
+    cursor: pointer;
+}

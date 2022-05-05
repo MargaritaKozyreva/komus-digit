@@ -1,0 +1,42 @@
+.turbo-content__wrapper {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr auto;
+    gap: 20px;
+
+
+}
+
+@media (max-width: 1000px) {
+    .turbo-content__wrapper {
+        grid-template-columns: 50% 50%;
+    }
+
+}
+@media (max-width: 850px) {
+    .turbo-content__wrapper {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+.person-turbo-image {
+    width: min-content;
+    position: relative;
+    top: -25px;
+    left: -35px;
+}
+
+.turbo-person-card {
+    display: flex;
+
+    .reviews__item-info {
+        align-self: center;
+    }
+}
+
+.turbo-content__desc {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}

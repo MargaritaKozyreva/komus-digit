@@ -1,0 +1,25 @@
+.card {
+    padding: 25px;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 5%);
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    position: relative;
+
+    &.white {
+        background: white;
+    }
+
+    &.blue {
+        background: blue;
+    }
+
+    .flag {
+        position: absolute;
+        width: 33.6px;
+        height: 38.38px;
+        top: 0;
+        right: 23px;
+        background: #F8DEE5;
+    }
+}

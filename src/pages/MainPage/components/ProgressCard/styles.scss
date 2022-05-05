@@ -1,0 +1,49 @@
+.card-item2 {
+    background: #ffffff;
+    border: 1px solid #a9d0e2;
+    box-sizing: border-box;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+}
+
+.left-block {
+    max-width: 177px;
+    width: 100%;
+    padding-top: 27px;
+}
+
+.left-block {
+    background: #125574;
+}
+
+.left-blocktext {
+    text-align: center;
+}
+
+.left-blocktext p {
+    color: #fff;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 400;
+    font-family: "Fira Sans", sans-serif;
+}
+
+.left-blocktext span {
+    color: #fff;
+    line-height: 70px;
+    font-size: 52px;
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+  }
+
+.right-block {
+    padding-top: 27px;
+    padding-left: 27px;
+    &.grid-item{
+        display: grid;
+        grid-template-rows: 1fr auto;
+        padding: 30px;
+    }
+}
+

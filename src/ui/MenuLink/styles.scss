@@ -1,0 +1,36 @@
+.mainMenu__item {
+    display: flex;
+    margin: 0 8px;
+    padding: 0;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    border-radius: 2px;
+    background-color: transparent;
+    transition: ease 150ms;
+}
+
+.mainMenu__link {
+    display: flex;
+    align-items: center;
+    padding: 3px 10px;
+    width: 125px;
+}
+
+.mainMenu__link,
+.mainMenu__subj {
+    color: #ffffff;
+    font-size: 1.5rem;
+    line-height: 100%;
+    text-decoration: none;
+}
+
+.mainMenu__subj {
+    display: inline-block;
+    padding: 5px;
+  }
+
+.mainMenu__image,
+.subMenu__image {
+    width: 20px;
+}

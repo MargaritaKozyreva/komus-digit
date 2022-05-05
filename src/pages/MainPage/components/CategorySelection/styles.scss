@@ -1,0 +1,134 @@
+.categorySelection__wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 0 50px;
+    z-index: 10;
+    height: auto;
+    flex-grow: 1;
+    align-items: stretch;
+}
+
+.categorySelection__left {
+    position: relative;
+}
+
+.categorySelection__left,
+.categorySelection__right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.categorySelection__block {
+    z-index: 100;
+    margin-left: -200px;
+}
+
+.categorySelection__block {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    max-width: 310px;
+    top: calc(50% - 130px);
+    margin-left: -30px;
+}
+
+.categorySelection__title {
+    font-size: 36px;
+    line-height: 100%;
+    font-weight: 700;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.categorySelection__description {
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+    font-weight: 400;
+    color: #7C97AD;
+    margin-top: 15px;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.centerAnimation__wrapper {
+    display: block;
+    position: relative;
+    min-width: 512px;
+    min-height: 79%;
+}
+
+@keyframes levitation {
+    0% {
+        top: calc(50% - 155px);
+    }
+    25% {
+        top: calc(50% - 145px);
+    }
+    50% {
+        top: calc(50% - 155px);
+    }
+    75% {
+        top: calc(50% - 165px);
+    }
+    100% {
+        top: calc(50% - 155px);
+    }
+}
+
+.centerAnimation__man>svg {
+    display: flex;
+    position: absolute;
+    width: 512px;
+    height: 448px;
+    top: calc(50% - 240px);
+    animation-name: levitation;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    z-index: 10;
+}
+
+.centerAnimation__galo {
+    display: block;
+    position: absolute;
+    width: 280px;
+    height: 280px;
+    left: calc(50% - 140px);
+    top: calc(50% - 140px);
+    background-color: #3EC254;
+    filter: blur(80px);
+    border-radius: 50%;
+    z-index: 9;
+}
+
+.centerAnimation__shadow {
+    display: block;
+    position: absolute;
+    width: 280px;
+    height: 50px;
+    left: calc(50% - 140px);
+    top: calc(50% + 180px);
+    background-color: #000000;
+    filter: blur(30px);
+    z-index: 9;
+    border-radius: 50%;
+}
+
+.categorySelection__left .red-btn.arrow {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: rotate(-10.38deg);
+}
+
+@media (max-width: 960px) {
+    .categorySelection__left .red-btn.arrow {
+        display: block;
+        transform: rotate(0deg) translateY(-50px);
+        display: flex;
+        align-items: center;
+        position: static;
+        z-index: 100;
+    }
+}
