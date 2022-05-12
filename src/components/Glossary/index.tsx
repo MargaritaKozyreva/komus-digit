@@ -19,6 +19,7 @@ const Glossary = () => {
 	const onClickHandler = (wordItem) => {
 		dispatch(modalActions.showModal({
 			key: ModalKey.GlossaryWord,
+			withBackground: true,
 			payload: {
 				word: wordItem
 			}

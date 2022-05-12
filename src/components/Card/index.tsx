@@ -23,8 +23,7 @@ const Card = () => {
 						<div className="categorySelection__block categorySelection__block_right">
 							<div className="categorySelection__title">Цифрокоманда</div>
 							<div className="categorySelection__description">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-								odio in et, lectus sit
+								1
 							</div>
 							<div>
 								<Link to={'/digital_knowledge'}>

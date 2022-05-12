@@ -36,8 +36,7 @@ const CategorySelection = () => {
 					}
 					align="right"
 				>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio in
-					et, lectus sit
+					Здесь ты сможешь получить всю необходимую информацию о Цифрокоманде!
 				</CategoryBlock>
 			</div>
 
@@ -61,8 +60,7 @@ const CategorySelection = () => {
 					}
 					align="left"
 				>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio in
-					et, lectus sit
+					Здесь ты сможешь получить всю необходимую информацию о Турбокоманде!
 				</CategoryBlock>
 			</div>
 		</div>
