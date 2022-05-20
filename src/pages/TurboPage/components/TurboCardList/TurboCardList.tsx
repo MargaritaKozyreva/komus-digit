@@ -140,28 +140,28 @@ const TurboCardList: React.FC<TurboCardListProps> = props => {
                               width={151}
                               height={179}
                               rx={20}
-                              fill="url(#pattern0)"
+                              fill={`url(#pattern-${card.person_id})`}
                             />
                           </g>
                           <defs>
                             <pattern
-                              id="pattern0"
+                              id={`pattern-${card.person_id}`}
                               patternContentUnits="objectBoundingBox"
                               width={1}
                               height={1}
                             >
                               <use
-                                xlinkHref="#image0_5_142222"
+                                xlinkHref={`#image-${card.person_id}`}
                                 transform="translate(-0.0927152) scale(0.00504438 0.00425532)"
                               />
                             </pattern>
                             <image
-                              id="image0_5_142222"
+                              id={`image-${card.person_id}`}
                               width={235}
                               height={235}
                               xlinkHref={`${process.env["API"]}/${card.img}`}
                               onError={(event: any) => {
-                                event.target.src = "/komus_num/app/public/noname.png";
+                                event.target.src = "course-card-default.svg";
                                 event.onerror = null;
                               }}
                             />
@@ -173,11 +173,11 @@ const TurboCardList: React.FC<TurboCardListProps> = props => {
                           <div className="reviews__item-image">
                             <img
                               alt=""
-                              src={`${
-                                card.img !== undefined
-                                  ? `${process.env["API"]}${card.img}`
-                                  : `cat.jpg`
-                              }`}
+                              src={`${process.env["API"]}${card.img}`}
+                              onError={(event: any) => {
+                                event.target.src = "course-card-default.svg";
+                                event.onerror = null;
+                              }}
                             />
                           </div>
                           <div className="reviews__item-headbox">

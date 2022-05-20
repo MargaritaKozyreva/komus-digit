@@ -98,11 +98,11 @@ const TurboPersonModalContent: React.FC<TurboPersonCardProps> = props => {
                 </g>
               </mask>
               <g mask="url(#mask0_5_1422)">
-                <rect width={151} height={179} rx={20} fill="url(#pattern0)" />
+                <rect width={151} height={179} rx={20} fill={`url(#pattern-${personId})`} />
               </g>
               <defs>
                 <pattern
-                  id="pattern0"
+                  id={`pattern-${personId}`}
                   patternContentUnits="objectBoundingBox"
                   width={1}
                   height={1}
@@ -116,7 +116,7 @@ const TurboPersonModalContent: React.FC<TurboPersonCardProps> = props => {
                   id="image0_5_1422"
                   width={235}
                   height={235}
-                  xlinkHref="https://icdn.lenta.ru/images/2021/04/27/16/20210427163138131/square_320_c09ebae17387b7d6eeb9fa0d42afe5ee.jpg"
+                  xlinkHref="course-card-default.svg"
                 />
               </defs>
             </svg>

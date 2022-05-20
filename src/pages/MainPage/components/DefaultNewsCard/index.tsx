@@ -11,7 +11,7 @@ interface INewsCard {
 
 const DefaultNewsCard: React.FC<INewsCard> = (props) => {
 	const {
-		num = 1,
+		num,
 		data: { weekDay, date, title, desc, img, articleId },
 		onClickHandler
 	} = props;

@@ -10,7 +10,7 @@ interface IVerticalNewsCard {
 
 const VerticalNewsCard: React.FC<IVerticalNewsCard> = props => {
   const {
-    num = 1,
+    num,
     data: { weekDay, date, title, desc, img, articleId },
     onClickHandler,
   } = props;
@@ -24,7 +24,7 @@ const VerticalNewsCard: React.FC<IVerticalNewsCard> = props => {
         <img
           src={`${process.env["API"]}${img}`}
           onError={(event: any) => {
-            event.target.src = "cat.jpg";
+            event.target.src = "course-card-default.svg";
             event.onerror = null;
           }}
         />
@@ -70,29 +70,29 @@ const VerticalNewsCard: React.FC<IVerticalNewsCard> = props => {
               fillRule="evenodd"
               clipRule="evenodd"
               d="M152.562 -10.2307C215.828 -13.0237 285.175 -46.9986 333.078 -5.62109C387.253 41.1733 411.114 124.41 386.003 191.411C362.91 253.025 284.438 260.283 223.799 285.955C169.234 309.055 115.889 350.182 60.4623 329.23C1.10083 306.792 -33.3886 245.612 -46.8486 183.651C-60.1178 122.569 -53.8368 53.0755 -8.99864 9.48038C31.9053 -30.2896 95.5374 -7.7133 152.562 -10.2307Z"
-              fill="url(#pattern1)"
+              fill={`url(#pattern${num})`}
             />
           </g>
           <defs>
             <pattern
-              id="pattern1"
+              id={`pattern${num}`}
               patternContentUnits="objectBoundingBox"
               width="1"
               height="1"
             >
               <use
-                xlinkHref="#image0_99_98"
+                xlinkHref={`#course-card-${articleId}`}
                 transform="translate(-0.103157) scale(0.000603157 0.000750188)"
               />
             </pattern>
 
             <image
-              id="image0_99_98"
+              id={`course-card-${articleId}`}
               width="2000"
               height="1333"
               xlinkHref={`${process.env["API"]}${img}`}
               onError={(event: any) => {
-                event.target.src = "cat.jpg";
+                event.target.src = "course-card-default.svg";
                 event.onerror = null;
               }}
             />

@@ -16,10 +16,10 @@ const PersonReview: React.FC<Props> = props => {
       <div className={styles.personInfoWrapper}>
         <img
           className={styles.reviewAvatar}
-          alt=""
+          alt="reviewAvatar"
           src={`${process.env["API"]}${review?.img}`}
           onError={(event: any) => {
-            event.target.src = `${process.env["API"]}/komus_num/app/images/default-avatar-icon.png`;
+            event.target.src = `${process.env["API"]}/komus_num/app/images/default-avatar-icon.svg`;
             event.onerror = null;
           }}
         />

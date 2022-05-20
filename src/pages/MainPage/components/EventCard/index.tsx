@@ -24,7 +24,7 @@ const EventCard = () => {
         <img
           src={`${process.env["API"]}${data?.nextEvent.image}`}
           onError={(event: any) => {
-            event.target.src = `${process.env["API"]}/komus_num/app/images/card1.png`;
+            event.target.src = `${process.env["API"]}/komus_num/app/images/event-card-default.svg`;
             event.onerror = null;
           }}
         />

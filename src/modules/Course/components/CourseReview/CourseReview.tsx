@@ -53,7 +53,7 @@ const CourseReview: React.FC<CourseReviewProps> = props => {
                 alt=""
                 src={`${process.env["API"]}${review.img}`}
                 onError={(event: any) => {
-                  event.target.src = `${process.env["API"]}/komus_num/app/images/default-avatar-icon.png`;
+                  event.target.src = `${process.env["API"]}/komus_num/app/images/default-avatar-icon.svg`;
                   event.onerror = null;
                 }}
               />

@@ -49,7 +49,7 @@ const CourseCard: React.FC<{course: CourseDTO.ICourse, user: UserDTO.UserState}>
         alt=""
         src={`${process.env["API"]}${course.img}`}
         onError={(event: any) => {
-          event.target.src = `${process.env["API"]}/komus_num/app/images/driver.jpg`;
+          event.target.src = `${process.env["API"]}/komus_num/app/images/course-card-default3.png`;
           event.onerror = null;
         }}
       />

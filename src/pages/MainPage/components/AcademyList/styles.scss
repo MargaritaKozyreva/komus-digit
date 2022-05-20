@@ -28,7 +28,7 @@
 .academy .parent {
     display: flex;
     column-gap: 29px;
-    padding-right: 50px;
+    // padding-right: 50px;
     overflow-x: clip;
 
 }
@@ -263,6 +263,7 @@
     margin-top: 0;
 }
 
+
 .parent__inner {
     margin-top: 29px;
     display: grid;
@@ -272,6 +273,8 @@
     grid-auto-flow: row;
     grid-template-areas: "Item-1 Item-2 Item-2""Item-1 Item-3 Item-4""Item-5 Item-5 Item-4";
 }
+
+
 
 .academy__element {
     font-family: Roboto;
