@@ -11,7 +11,7 @@ const UserBar: React.FC<UserBarProps> = ({ userImage, userName, link }) => {
 	return (
 		<div className="mainMenu__userContainer">
 			<a href={ link } className="mainMenu__userLink" target='_blank'>
-				<div className="mainMenu__userQuest">Задать вопрос</div>
+				{/* <div className="mainMenu__userQuest">Задать вопрос</div> */}
 				<img className="mainMenu__userPhoto" src={ userImage } alt="" title="" />
 				<div className="mainMenu__userName">{ userName }</div>
 			</a>

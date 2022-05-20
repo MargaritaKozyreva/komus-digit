@@ -11,7 +11,18 @@
     max-width: 177px;
     width: 100%;
     padding-top: 27px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
+.right-block-text {
+    font-size: 20px;
+    text-align: left;
+    font-weight: 500;
+    line-height: 26px;
+    align-self: center;
+
+  }
 
 .left-block {
     background: #125574;
@@ -47,3 +58,9 @@
     }
 }
 
+@media screen and (max-width: 750px){
+    .right-block-text {
+        font-size: 14px;
+        line-height: 18.9px;
+    }
+}

@@ -14,8 +14,9 @@
         object-fit: cover;
         height: 100%;
         margin-left: 15px;
+        max-width: 50%;
     }
-    padding: 30px;
+    padding: 10px;
     position: relative;
     background: #ffffff;
     border: 1px solid #e7d8ae;
@@ -77,6 +78,7 @@
     line-height: 27px;
     font-family: "Montserrat", sans-serif;
     z-index: 1;
+    max-width: 50%;
 }
 
 .card-text {
@@ -85,11 +87,13 @@
     margin-top: 11px;
     font-size: 14px;
     line-height: 18.9px;
-    max-width: 303px;
+    max-width: 45%;
 }
 
 .card-all {
     margin-left: 30px;
+    padding-top: 10px;
+
 }
 
 .card-all a {
@@ -98,6 +102,7 @@
     font-family: "Fira Sans", sans-serif;
     font-weight: 400;
     line-height: 19.2px;
+
 }
 
 .hidden-date {
@@ -119,8 +124,13 @@
         padding: 20px;
         width: 100% !important;
         margin-bottom: 20px;
+    } 
+    .card-name{
+        max-width: 100%;
     }
-
+    .card-text{
+        max-width: 100%;
+    }
     .card-item2 .right-block {
         padding: 20px;
     }

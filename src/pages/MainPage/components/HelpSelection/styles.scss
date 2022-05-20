@@ -40,3 +40,9 @@
     margin-bottom: 20px;
     margin: 0 15px;
 }
+
+@media (max-width: 768px) {
+    .help {
+        padding-bottom: 0px;
+    }
+}

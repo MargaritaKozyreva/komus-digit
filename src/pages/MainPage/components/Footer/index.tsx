@@ -40,7 +40,7 @@ const Footer = () => {
 						<div className="s-footer-wrapper">
 							<div className="s-footer-left">
 								<img src="projects_oodp/turbo_so/img/ic/logo_f.svg" alt="logo" />
-								<p>© «Комус», 2020</p>
+								<p>© «Комус», 2022</p>
 							</div>
 							<div className="s-footer-right">
 								<p>Мы в соцсетях</p>
